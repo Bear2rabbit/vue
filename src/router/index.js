@@ -6,10 +6,10 @@ import shopCar from '@/components/tabbar/shopCar'
 import search from '@/components/tabbar/search'
 
 Vue.use(Router)
-
+  
 export default new Router({
   routes: [
-    { path: '/', redirect: '/Home' },//重定向
+    { path: '/', redirect: '/Home', component: Home },//重定向
     { path: '/home',component: Home},
     { path: '/member', component: member },
     { path: '/shopCar', component: shopCar},
