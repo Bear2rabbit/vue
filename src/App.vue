@@ -1,7 +1,9 @@
 <template>
   <div id="app" >
     <!-- 顶部区域 -->
-    <mt-header fixed title="固定在顶部"></mt-header>
+    <mt-header fixed title="hahaha">
+          
+    </mt-header>
     <!--  路由内容-->
    <router-view></router-view>
     <!-- 底部 区域 -->
@@ -41,21 +43,20 @@ export default {
         message: "测试哈哈哈哈",
         position: " center",
         duration: 1000,
-        iconClass: 'icon icon-success'
+        iconClass: "icon icon-success"
       });
     }
   }
 };
 </script>
-
 <style scoped lang="less">
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  padding-top: 45px;
-   padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 50px;
   background-color: #fff;
 }
 
