@@ -13,7 +13,7 @@
 		                    <div class="mui-media-body">新闻资讯</div>
                     </router-link>
                 </li>
-		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
+		            <!-- <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
 		                    <span class="mui-icon mui-icon-email"><span class="mui-badge">5</span></span>
 		                    <div class="mui-media-body">Email</div></a></li>
 		            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
@@ -36,7 +36,7 @@
 		                    <div class="mui-media-body">about</div></a></li>
 		           <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="#">
 		                    <span class="mui-icon mui-icon-more"></span>
-		                    <div class="mui-media-body">more</div></a></li>
+		                    <div class="mui-media-body">more</div></a></li> -->
 		        </ul> 
 		</div>
 	

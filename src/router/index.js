@@ -5,6 +5,7 @@ import member from '@/components/tabbar/member'
 import shopCar from '@/components/tabbar/shopCar'
 import search from '@/components/tabbar/search'
 import newList from '@/components/navbar/newList'
+import newInfo from '@/components/navbar/newsinfo'
 
 Vue.use(Router)
   
@@ -17,6 +18,8 @@ export default new Router({
     { path: '/shopCar', component: shopCar},
     { path: '/search', component: search },
     { path: '/news/newList', component: newList },
+    { path: '/news/newinfo/:id', component: newInfo },
+
 
   ]
   

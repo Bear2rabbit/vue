@@ -1,8 +1,8 @@
  <template>
     <div>
         <ul class="mui-table-view">
-            <li class="mui-table-view-cell mui-media" v-for="item in list" :key="item.id">
-                <router-link to="/">
+            <li class="mui-table-view-cell mui-media" v-for="item in list" :key="item.id" >
+                <router-link :to="'/news/newinfo/'+item.productId">
                     <img class="mui-media-object mui-pull-left" src="../../../static/images/1.png">
                     <div class="mui-media-body">
                         <div class="clearfix info">   
@@ -31,7 +31,7 @@ export default {
     getNewsData() {
       this.$http
         .jsonp(
-          "http://mmb.ittun.com/api/getproductlist?categoryid=1&pageid=1&pagesize=100"
+          "http://mmb.ittun.com/api/getproductlist?categoryid=1&pageid=1"
         )
         .then(function(response) {
           console.log(response);
