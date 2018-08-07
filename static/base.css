@@ -1,0 +1,99 @@
+/*公共样式*/
+
+html,
+body,
+img,
+div,
+p,
+a,
+ul,
+li,
+form,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*清除a链接在移动端点击时 的高亮显示*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    font-family: "微软雅黑", sans-serif;
+    font-size: 13px;
+}
+
+a,
+a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.m_left10 {
+    margin-left: 10px;
+}
+
+.m_right10 {
+    margin-right: 10px;
+}
+
+.m_top10 {
+    margin-top: 10px;
+}
+
+.b_left {
+    border-left: 1px solid #ccc;
+}
+
+.b_right {
+    border-right: 1px solid #ccc;
+}
+
+.b_bottom {
+    border-bottom: 1px solid #ccc;
+}
+.p_20{
+    padding: 20px;
+}

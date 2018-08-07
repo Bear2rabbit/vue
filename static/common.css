@@ -1,7 +1,290 @@
-body{
-    background-color: #fff;
-}
-*{
+公共样式 html,
+body,
+img,
+div,
+p,
+a,
+ul,
+li,
+form,
+input,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    /*清除a链接在移动端点击时 的高亮显示*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* 清除浮动 */
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a,
+a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+.m_left10 {
+    margin-left: 10/50rem;
+}
+
+.m_right10 {
+    margin-right: 10/50rem;
+}
+
+.m_top10 {
+    margin-top: 10/50rem;
+}
+
+.b_left {
+    border-left: 1/50rem solid #ccc;
+}
+
+.b_right {
+    border-right: 1/50rem solid #ccc;
+}
+
+.b_bottom {
+    border-bottom: 1/50rem solid #ccc;
+}
+
+.p_20 {
+    padding: 20/50rem;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: #f2f2f2; */
+    color: #000;
+    box-sizing: content-box;
+    padding-bottom:2rem; 
+}
+
+.mmw_header {
+    width: 100%;
+    background-color: #ff841d;
+    border-bottom: 0.02rem solid #e6e6e6;
+}
+
+.mmw_header>.logo {
+    float: left;
+    margin-left: 0.1rem;
+    padding: 0.24rem;
+}
+
+.mmw_header>.logo>a {
+    display: block;
+}
+
+.mmw_header>.logo>a>img {
+    display: block;
+    width: 3.7rem;
+    height: 0.5rem;
+}
+
+.mmw_header>.downLoad {
+    float: right;
+    padding: 0.14rem;
+}
+
+.mmw_header>.downLoad>a {
+    display: block;
+}
+
+.mmw_header>.downLoad>a>img {
+    display: block;
+    width: 0.68rem;
+    height: 0.68rem;
+}
+
+.mmw_search {
+    width: 100%;
+    border-bottom: 0.02rem solid #e6e6e6;
+    background: #fff;
+}
+
+.mmw_search>.searchBox {
+    padding: 0.2rem;
+    position: relative;
+}
+
+.mmw_search>.searchBox input {
+    height: 0.6rem;
+    border-radius: 0.3rem;
+    font-size: 0.32rem;
+}
+
+.mmw_search>.searchBox .searchtxt>input {
+    border: none;
+    background: #f1f1f1;
+    padding-left: 0.5rem;
+    width: 90%;
+    /* padding-left: 5%; */
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.mmw_search>.searchBox .searchbtn>input {
+    width: 1.26rem;
+    background: #ff841d;
+    color: #FFFFFF;
+    border: none;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+.mmw_footer {
+    margin-top: 0.5rem;
+}
+
+.mmw_footer>.foot_top {
+    background: #efefef;
+    border-top: 0.02rem solid #c4c4c4;
+    border-bottom: 0.02rem solid #c4c4c4;
+    height: 0.68rem;
+    line-height: 0.68rem;
+}
+
+.mmw_footer>.foot_top>a {
+    color: #5a5a5a;
+    box-sizing: border-box;
+    float: left;
+    font-size: 0.28rem;
+    border-right: 0.02rem solid #c4c4c4;
+    text-align: center;
+    width: 30%;
+}
+
+.mmw_footer>.foot_top>a:last-of-type {
+    width: 40%;
+    border-right: 0;
+}
+
+.mmw_footer>.foot_top img {
+    width: 0.3rem;
+    height: 0.3rem;
+    margin-right: 0.04rem;
+    margin-bottom: 0.12rem;
+}
+
+.mmw_footer>.foot_bottom {
+    padding: 0.3rem 0;
+    text-align: center;
+}
+
+.mmw_ad {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    display: block;
+    width: 100%;
+    height: 1.2rem;
+    background-color: #faf8f5;
+}
+
+.mmw_ad>.closefix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0.42rem;
+    height: 0.42rem;
+    padding: 0.38rem 0.24rem 0.4rem;
+    background-image: url(../images/close.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0.42rem;
+    opacity: 1;
+    box-sizing: content-box;
+}
+
+.mmw_ad .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0.92rem;
+    width: 0.82rem;
+    height: 0.82rem;
+    margin: auto;
+    background-image: url(../images/foot_logo.jpg);
+    background-position: center;
+    background-size: 0.82rem;
+}
+
+.mmw_ad .titlefix {
+    margin-top: 0.24rem;
+    margin-bottom: 0;
+    font-size: 0.36rem;
+    color: #888;
+}
+
+.mmw_ad .describe {
+    margin-top: 0.06rem;
+    font-size: 0.28rem;
+    color: #999;
+}
+
+.mmw_ad p {
+    margin-left: 1.94rem;
+    margin-right: 1.68rem;
+    line-height: 1;
+}
+
+.mmw_ad .download-btn {
+    position: absolute;
+    right: 0.2rem;
+    width: 1.48rem;
+    height: 0.46rem;
+    padding-top: 0.2rem;
+    top: 0;
+    margin-top: 0.27rem;
+    font-size: 0.26rem;
+    text-align: center;
+    color: #fff;
+    background-color: #ff7700;
+    border-radius: 0.08rem;
+    box-shadow: inset 0 -0.04rem #ff5500;
+    box-sizing: content-box;
 }
