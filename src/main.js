@@ -9,7 +9,8 @@ import 'mint-ui/lib/style.css'
 import $ from "jquery"
 Vue.prototype.common={
   api: 'https://api.douban.com',
-  mapi: 'http://127.0.0.1:3000'
+  // mapi: 'http://127.0.0.1:3000'
+  mapi:'http://mmb.ittun.com'
 }
 // import { Header } from 'mint-ui';
 // Vue.component(Header.name, Header);

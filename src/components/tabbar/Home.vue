@@ -61,7 +61,7 @@ export default {
     },
     getList() {
       this.$http
-        .get(this.common.mapi + "/api/getindexmenu")
+        .jsonp(this.common.mapi + "/api/getindexmenu")
         .then(function(response) {
           console.log(response);
           if (response.status == 200) {
